@@ -11,6 +11,10 @@ jobs:
   echo-windows:
     runs-on: windows-latest
     steps:
-      - name: echo OS info
+      - name: echo OS info by powershell
         run: |
           echo "Current Runner OS: $env:RUNNER_OS"
+      - name: echo OS info by bash
+        shell: bash
+        run: |
+          echo "Current Runner OS: $RUNNER_OS"

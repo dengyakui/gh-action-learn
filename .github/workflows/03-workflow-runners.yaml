@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: echo OS info
         run: |
-          echo "Current Runner OS: $RUNNER_OS"
+          echo "Current Runner OS: $env:RUNNER_OS"

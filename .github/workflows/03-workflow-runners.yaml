@@ -7,4 +7,10 @@ jobs:
       - name: echo OS info
         run: |
           echo "Current Runner OS: $RUNNER_OS"
-        
+  
+  echo-windows:
+    runs-on: windows-latest
+    steps:
+      - name: echo OS info
+        run: |
+          echo "Current Runner OS: $RUNNER_OS"

@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "Current Runner OS: $RUNNER_OS"
   echo-mac:
-    runs-on: mac-latest
+    runs-on: macos-latest
     steps:
       - name: echo OS info
         run: |

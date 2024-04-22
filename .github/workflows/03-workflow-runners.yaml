@@ -18,3 +18,10 @@ jobs:
         shell: bash
         run: |
           echo "Current Runner OS: $RUNNER_OS"
+  echo-mac:
+    runs-on: mac-latest
+    steps:
+      - name: echo OS info
+        run: |
+          echo "Current Runner OS: $RUNNER_OS"
+  

@@ -12,4 +12,4 @@ jobs:
           node-version: 20
       - name: Install Dependency
         run: npm ci
-        working-directory: 04-using-actions
+        working-directory: 04-using-actions/my-app

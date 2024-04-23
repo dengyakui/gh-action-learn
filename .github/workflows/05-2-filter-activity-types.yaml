@@ -4,7 +4,7 @@ on:
     types:
       - closed
     branches:
-      - main
+      - master
 jobs: 
   echo:
     runs-on: ubuntu-latest

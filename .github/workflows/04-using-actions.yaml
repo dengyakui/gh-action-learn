@@ -5,4 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ls
+        name: Checkout
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 20
+          cache: npm
+      - name: Install Dependency
+        run: npm ci
+        working-directory: 04-using-actions

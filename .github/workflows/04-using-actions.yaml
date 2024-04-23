@@ -1,0 +1,8 @@
+﻿name: 04 - using actions
+on: push
+jobs: 
+  install-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls
